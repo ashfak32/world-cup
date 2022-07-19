@@ -1,0 +1,122 @@
+/* ------------------------Googole font------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*--------------------------------------- Global Css------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------------------- Banner Section Css Start------------------------------- */
+.banner-section-main {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    padding: 0 50px;
+    justify-items: end;
+    align-items: center;
+}
+
+.banner-section-info h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner-section-info p {
+    margin: 20px 0 30px;
+}
+
+.wach-live-btn {
+    color: white;
+    background-color: red;
+    padding: 5px 25px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.banner-section-image img {
+    width: 500px;
+}
+
+
+/*---------------------------------- Blog Section Css Start------------------------------- */
+.blog-section-main {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-column-gap: 20px;
+}
+.blog-section-left {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 170px;
+    text-align: center;
+    padding: 0 20px;
+}
+.blog-section-right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.blog-section-left a {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+.blog{
+    background-color: red !important;
+    color: white !important;
+}
+.blog-section-right-inner {
+    box-shadow: 0 0 5px lightgrey;
+    border-radius: 10px;
+}
+.blog-section-right-inner img{
+    width: 100%;
+}
+.blog-section-right-inner p a {
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 5px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.blog-info {
+    padding: 10px 20px 23px;
+}
+.blog-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.time-and-comment-section span{
+    margin-right: 40px;
+}
+.time-and-comment-section .fa-solid{
+    margin-right: 15px;
+}
+/*-------------------------------- Footer Section Css Start----------------------------------- */
+footer{
+    background-color: black;
+    padding: 40px 0;
+}
