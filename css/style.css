@@ -214,6 +214,13 @@ footer h2 {
 
     footer {
         padding: 30px 0;
+        margin-top: 20px;
+    }
+    .contact-info a {
+        color: white;
+        margin-right: 0;
+        margin-top: 20px;
+        display: block;
     }
 
 }
