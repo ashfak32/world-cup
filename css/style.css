@@ -63,6 +63,7 @@ a {
     grid-template-columns: 200px auto;
     grid-column-gap: 20px;
 }
+
 .blog-section-left {
     background: black;
     display: flex;
@@ -73,28 +74,34 @@ a {
     text-align: center;
     padding: 0 20px;
 }
-.blog-section-right{
+
+.blog-section-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
+
 .blog-section-left a {
     background-color: white;
     border-radius: 5px;
     padding: 5px;
     color: black;
 }
-.blog{
+
+.blog {
     background-color: red !important;
     color: white !important;
 }
+
 .blog-section-right-inner {
     box-shadow: 0 0 5px lightgrey;
     border-radius: 10px;
 }
-.blog-section-right-inner img{
+
+.blog-section-right-inner img {
     width: 100%;
 }
+
 .blog-section-right-inner p a {
     display: inline-block;
     border: 1px solid gray;
@@ -102,21 +109,111 @@ a {
     margin: 10px 0;
     border-radius: 5px;
 }
+
 .blog-info {
     padding: 10px 20px 23px;
 }
+
 .blog-info h2 {
     font-size: 18px;
     margin-bottom: 10px;
 }
-.time-and-comment-section span{
+
+.time-and-comment-section span {
     margin-right: 40px;
 }
-.time-and-comment-section .fa-solid{
-    margin-right: 15px;
+
+.time-and-comment-section .fa-solid {
+    margin-right: 10px;
 }
+
 /*-------------------------------- Footer Section Css Start----------------------------------- */
-footer{
+footer {
+    width: 100%;
     background-color: black;
-    padding: 40px 0;
+    padding: 70px 0;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info a {
+    color: white;
+    margin-right: 30px;
+    margin-top: 50px;
+    display: inline-block;
+
+}
+
+
+/* mobile media Quary */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .banner-section-info {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .banner-section-main {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
+        justify-items: center;
+
+    }
+
+    .banner-section-info h1 {
+        font-size: 25px;
+    }
+
+    .banner-section-info p {
+        /* margin: 20px 0 30px; */
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .banner-section-image img {
+        width: 100%;
+    }
+
+    .blog-section-main {
+        grid-template-columns: auto;
+        margin: 0;
+
+    }
+
+    .blog-section-left a {
+        box-shadow: 0 0 5px grey;
+
+    }
+
+    .blog-section-left {
+        background: none;
+        justify-content: space-around;
+        border-radius: 10px;
+        height: none !important;
+        text-align: center;
+        margin: 22px 0;
+        padding: 0;
+    }
+
+    .blog-section-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
 }
