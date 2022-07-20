@@ -31,6 +31,7 @@ a {
     padding: 0 50px;
     justify-items: end;
     align-items: center;
+    margin-top: 50px;
 }
 
 .banner-section-info h1 {
@@ -161,7 +162,16 @@ hr {
     width: 80%;
     margin: auto;
 }
-
+.social-icon-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.social-icon-section a {
+    color: white;
+    margin: 0 20px;
+    font-size: 20px;
+}
 /*--------------------------------------------------- Mobile Media Quary--------------------------------------------------- */
 @media only screen and (max-width: 688px) {
     .container {
@@ -239,6 +249,7 @@ hr {
         margin-top: 20px;
         display: block;
     }
+   
 
 }
 
