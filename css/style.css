@@ -50,7 +50,9 @@ a {
     font-size: 14px;
     border-radius: 5px;
 }
-
+.fa-angle-right{
+    margin-left: 10px;
+}
 .banner-section-image img {
     width: 500px;
 }
@@ -163,8 +165,8 @@ hr {
 /*--------------------------------------------------- Mobile Media Quary--------------------------------------------------- */
 @media only screen and (max-width: 688px) {
     .container {
-        width: 330px;
-        margin: 0 auto;
+        max-width: 330px;
+        
     }
 
     .banner-section-info {
@@ -287,4 +289,18 @@ hr {
         width: 218px;
         margin-bottom: 20px;
     }
+}
+
+/* Upcoming Section Css start */
+.upcoming-match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.upcoming-match img {
+    width: 40% !important;
+}
+.match-title,.match-time{
+    text-align: center;
 }
