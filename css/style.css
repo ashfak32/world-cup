@@ -32,6 +32,7 @@ a {
     justify-items: end;
     align-items: center;
     margin-top: 50px;
+    position: relative;
 }
 
 .banner-section-info h1 {
@@ -44,20 +45,65 @@ a {
     margin: 20px 0 30px;
 }
 
-.wach-live-btn, .view-all-btn {
+.wach-live-btn,
+.view-all-btn {
     color: white;
     background-color: red;
     padding: 5px 25px;
     font-size: 14px;
     border-radius: 5px;
 }
-.fa-angle-right{
+
+.fa-angle-right {
     margin-left: 10px;
 }
+
 .banner-section-image img {
     width: 500px;
 }
 
+
+.animation-section {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    animation: mymove 10s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 1170px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 1170px;
+        top: 500px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 500px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
 
 /*---------------------------------- Blog Section Css Start------------------------------- */
 .blog-section-main {
@@ -129,11 +175,13 @@ a {
 .time-and-comment-section .fa-solid {
     margin-right: 10px;
 }
-.view-all{
+
+.view-all {
     text-align: center;
     margin-bottom: 50px;
     display: none;
 }
+
 /*-------------------------------- Footer Section Css Start----------------------------------- */
 footer {
     width: 100%;
@@ -158,25 +206,29 @@ footer h2 {
     display: inline-block;
 
 }
+
 hr {
     width: 80%;
     margin: auto;
 }
+
 .social-icon-section {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
+
 .social-icon-section a {
     color: white;
     margin: 0 20px;
     font-size: 20px;
 }
+
 /*--------------------------------------------------- Mobile Media Quary--------------------------------------------------- */
 @media only screen and (max-width: 688px) {
     .container {
         max-width: 330px;
-        
+
     }
 
     .banner-section-info {
@@ -249,12 +301,54 @@ hr {
         margin-top: 20px;
         display: block;
     }
-   
+    .animation-section {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        animation: mymove 5s infinite;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes mymove {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    
+        25% {
+            background-color: yellow;
+            left: 300px;
+            top: 0px;
+        }
+    
+        50% {
+            background-color: blue;
+            left: 300px;
+            top: 500px;
+        }
+    
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 500px;
+        }
+    
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    }
 
 }
 
+
+
 /*--------------------------------------------------- Tablet Media Quary--------------------------------------------------- */
-@media only screen and (min-width: 688px) and (max-width:992px) {
+@media only screen and (min-width:688px) and (max-width:992px) {
     .container {
         max-width: 700px;
     }
@@ -262,6 +356,7 @@ hr {
     .banner-section-info h1 {
         font-size: 30px;
     }
+
     .banner-section-info p {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -270,6 +365,7 @@ hr {
         /* number of lines to show */
         -webkit-box-orient: vertical;
     }
+
     .banner-section-image img {
         width: 300px;
     }
@@ -284,21 +380,66 @@ hr {
         grid-template-columns: auto;
 
     }
-    .view-all{
+
+    .view-all {
         text-align: center;
         margin-bottom: 50px;
         display: block;
     }
+
     .blog-section-left {
         background: none;
         flex-direction: row;
         height: unset !important;
         padding: 0;
     }
+
     .blog-section-left a {
         box-shadow: 0 0 5px grey;
         width: 218px;
         margin-bottom: 20px;
+    }
+
+    .animation-section {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        animation: mymove 5s infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes mymove {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: 670px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: blue;
+            left: 670px;
+            top: 300px;
+        }
+
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 290px;
+        }
+
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
     }
 }
 
@@ -309,9 +450,12 @@ hr {
     justify-content: space-between;
     padding: 20px;
 }
+
 .upcoming-match img {
     width: 40% !important;
 }
-.match-title,.match-time{
+
+.match-title,
+.match-time {
     text-align: center;
 }
