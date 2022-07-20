@@ -48,12 +48,18 @@ a {
 .wach-live-btn,
 .view-all-btn {
     color: white;
+    border: 1px solid red;
     background-color: red;
     padding: 5px 25px;
     font-size: 14px;
     border-radius: 5px;
+    
 }
-
+.wach-live-btn:hover{
+    border: 1px solid red;
+    background-color: transparent;
+    transition: all .3s ease-in;
+}
 .fa-angle-right {
     margin-left: 10px;
 }
@@ -161,6 +167,12 @@ a {
 
 .blog-info {
     padding: 10px 20px 23px;
+}
+
+.blog-info a:hover{
+    background-color: red;
+    color: white;
+    transition: all .2s ease-in-out;
 }
 
 .blog-info h2 {
